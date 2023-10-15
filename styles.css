@@ -1,0 +1,103 @@
+/* Firstly, Reset some default styles and apply a common font family */
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Style the entire page background */
+body {
+    background-color: #f0f0f0;
+}
+
+/* Style the header and navigation */
+header {
+    background-color: #222; /* Set your preferred header background color */
+    color: #fff; /* Set the text color for the header */
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+/* Style the "Home" section */
+#home {
+    background: url('home-background.jpg') center/cover; /* Set your background image */
+    color: #fff;
+    text-align: center;
+    padding: 100px 0;
+}
+
+#branding {
+    background-color: rgba(0, 0, 0, 0.5); /* Add a semi-transparent background color */
+    border-radius: 5px;
+    padding: 4rem 1rem;
+}
+
+#branding p {
+    font-size: 18px;
+}
+
+#branding h1 {
+    font-size: 36px;
+    margin-top: 20px;
+}
+
+/* Style the "About Me" section */
+#about {
+    background-color: #fff;
+    padding: 40px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Style the "Skills" section */
+#skills {
+    background-color: #f7f7f7;
+    padding: 40px;
+}
+
+/* Style the "Projects" section */
+#projects {
+    background-color: #fff;
+    padding: 40px;
+}
+
+/* Style the "Contact" section */
+#contact {
+    background-color: #f7f7f7;
+    padding: 40px;
+}
+
+/* Style the footer */
+footer {
+    background-color: #222;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Add hover effect to navigation links */
+nav ul li a:hover {
+    text-decoration: underline;
+}
