@@ -1,8 +1,31 @@
+:root{
+    --clr-primary: #5193B3;
+    --clr-dark: #333333;
+    --clr-light: #efefef;
+}
+
 /* Firstly, Reset some default styles and apply a common font family */
 body, h1, h2, p, ul, li {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
+}
+
+a{
+    color: inherit;
+    text-decoration: none;
+}
+
+img{
+    max-width: 100%;
+    object-fit: cover;
+}
+
+.container{
+    max-width: 1140px;
+    width: 100%;
+    margin:0 auto;
+    padding-inline: 1rem;
 }
 
 /* Style the entire page background */
@@ -12,14 +35,29 @@ body {
 
 /* Style the header and navigation */
 header {
-    background-color: #6e5d5d; 
-    color: #928080;
+    background-color: var(--clr-dark); 
+    color: var(--clr-light);
     padding: 10px;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 9999;
+}
+
+header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 1rem;
+}
+
+header .logo{
+    cursor: pointer;
+}
+
+header .logo::first-letter{
+    color: var(--clr-primary);
 }
 
 nav ul {
@@ -35,28 +73,36 @@ nav ul li a {
     text-decoration: none;
     color: #fff;
     font-weight: bold;
-}
-
-.highlight {
-    color: Turquoise;
-    font-weight: 900;
-    font-size: 24px; 
+    font-size: 0.9rem;
 }
 
 /* Style the "Home" section */
 #home {
-    background: url('images/image3.jpg') center/cover;
-    background-color: rgba(255, 255, 255, 0.5);
-    background-size: contain;
+    background-image: url('images/image2.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
     color: #fff;
     text-align: center;
     padding: 100px 0;
+    position: relative;
+    z-index: 0;
+}
+
+#home::before{
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    left:0;
+    bottom:0;
+    z-index: -1;
+    background: #33333399;
 }
 
 /* Style the CV button */
 .cv-button {
-    text-decoration: none;
-    background-color: Turquoise; 
+    background-color: var(--clr-primary); 
     color: #fff; 
     font-weight: bold;
     padding: 10px 20px; 
@@ -65,7 +111,7 @@ nav ul li a {
     cursor: pointer;
     display: inline-block;
     margin-top: 20px;
-    text-align: center;
+    transition: .3s ease-in-out;
 }
 
 .cv-button:hover {
@@ -77,7 +123,7 @@ nav ul li a {
 }
 
 #branding p {
-    font-size: 30px;
+    font-size: 15px;
 }
 
 #branding h1 {
@@ -85,28 +131,47 @@ nav ul li a {
     margin-top: 20px;
 }
 
+#branding .paragraph{
+    margin-block: 1rem;
+    font-size: 20px;
+}
+
 /* Style the "About Me" section */
 #about {
-    background-color: #f4f4f4;
-    padding: 20px; 
+    background-color: var(--clr-light);
+    padding-block: 5rem; 
+    color: var(--clr-dark);
 }
 
 .about-content {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
     align-items: center;
 }
 
-.about-image {
-    flex: 1; 
-    padding: 0 20px;
+.about-image { 
+    height: 400px;
+    width: 100%;
+    border-radius: 10px;
+    overflow: hidden;
 }
 
 .about-image img {
-    max-width: 80%;
+    width: 100%;
 }
 
 .about-text {
-    flex: 1; 
+    width: 100%;
+}
+
+.about-text h2{
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
+
+.about-text p{
+    line-height: 1.7;
 }
 
 /* Style the "Skills" section */
