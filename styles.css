@@ -12,14 +12,14 @@ body {
 
 /* Style the header and navigation */
 header {
-    background-color: #222; /* Set your preferred header background color */
-    color: #fff; /* Set the text color for the header */
+    background-color: #6e5d5d; /* Set your preferred header background color */
+    color: #928080; /* Set the text color for the header */
     padding: 10px;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 nav ul {
@@ -28,7 +28,7 @@ nav ul {
 
 nav ul li {
     display: inline;
-    margin-right: 20px;
+    margin-left: 20px;
 }
 
 nav ul li a {
@@ -39,20 +39,39 @@ nav ul li a {
 
 /* Style the "Home" section */
 #home {
-    background: url('home-background.jpg') center/cover; /* Set your background image */
+    background: url('images/image3.jpg') center/cover;
+    background-size: contain;
     color: #fff;
     text-align: center;
     padding: 100px 0;
 }
 
+/* Style the CV button */
+.cv-button {
+    text-decoration: none;
+    background-color: #ff5733; /* Button background color */
+    color: #fff; /* Button text color */
+    font-weight: bold;
+    padding: 10px 20px; /* Button padding */
+    border: none;
+    border-radius: 5px; /* Button border radius for rounded corners */
+    cursor: pointer;
+    display: inline-block;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.cv-button:hover {
+    background-color: #ab8178; /* Button background color on hover */
+}
+
+
 #branding {
-    background-color: rgba(0, 0, 0, 0.5); /* Add a semi-transparent background color */
-    border-radius: 5px;
     padding: 4rem 1rem;
 }
 
 #branding p {
-    font-size: 18px;
+    font-size: 30px;
 }
 
 #branding h1 {
@@ -100,4 +119,5 @@ footer {
 /* Add hover effect to navigation links */
 nav ul li a:hover {
     text-decoration: underline;
+    color: dodgerblue;
 }
