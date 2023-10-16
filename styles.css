@@ -12,8 +12,8 @@ body {
 
 /* Style the header and navigation */
 header {
-    background-color: #6e5d5d; /* Set your preferred header background color */
-    color: #928080; /* Set the text color for the header */
+    background-color: #6e5d5d; 
+    color: #928080;
     padding: 10px;
     position: fixed;
     top: 0;
@@ -37,9 +37,16 @@ nav ul li a {
     font-weight: bold;
 }
 
+.highlight {
+    color: Turquoise;
+    font-weight: 900;
+    font-size: 24px; 
+}
+
 /* Style the "Home" section */
 #home {
     background: url('images/image3.jpg') center/cover;
+    background-color: rgba(255, 255, 255, 0.5);
     background-size: contain;
     color: #fff;
     text-align: center;
@@ -49,12 +56,12 @@ nav ul li a {
 /* Style the CV button */
 .cv-button {
     text-decoration: none;
-    background-color: #ff5733; /* Button background color */
-    color: #fff; /* Button text color */
+    background-color: Turquoise; 
+    color: #fff; 
     font-weight: bold;
-    padding: 10px 20px; /* Button padding */
+    padding: 10px 20px; 
     border: none;
-    border-radius: 5px; /* Button border radius for rounded corners */
+    border-radius: 8px; 
     cursor: pointer;
     display: inline-block;
     margin-top: 20px;
@@ -62,9 +69,8 @@ nav ul li a {
 }
 
 .cv-button:hover {
-    background-color: #ab8178; /* Button background color on hover */
+    background-color: #ab8178;
 }
-
 
 #branding {
     padding: 4rem 1rem;
@@ -81,13 +87,26 @@ nav ul li a {
 
 /* Style the "About Me" section */
 #about {
-    background-color: #fff;
-    padding: 40px;
+    background-color: #f4f4f4;
+    padding: 20px; 
 }
 
-.container {
-    max-width: 800px;
-    margin: 0 auto;
+.about-content {
+    display: flex;
+    align-items: center;
+}
+
+.about-image {
+    flex: 1; 
+    padding: 0 20px;
+}
+
+.about-image img {
+    max-width: 80%;
+}
+
+.about-text {
+    flex: 1; 
 }
 
 /* Style the "Skills" section */
