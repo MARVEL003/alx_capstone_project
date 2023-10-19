@@ -15,8 +15,9 @@
     <header>
       <div class="container">
         <a href="./"><h4 class="logo">Marvie</h4></a>
+        <i class="fas fa-bars hamburger" onclick="showMenu()"></i>
         <nav id="navLinks" class="Navstyle">
-          <i class="fas fa-times hamburger" onclick="hideMenu"></i>
+          <i class="fas fa-times hamburger" onclick="hideMenu()"></i>
           <ul>
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About Me</a></li>
@@ -24,7 +25,6 @@
             <li><a href="#projects">Projects</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
-          <i class="fas fa-bars hamburger" onclick="showMenu"></i>
         </nav>
       </div>
     </header>
@@ -142,15 +142,6 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"></script>
     <script src="script.js"></script>
-    <script>
-      var navLinks = document.getElementById("navLinks");
-      function showMenu() {
-        navLinks.style.right = "0px";
-      }
-      function hideMenu() {
-        navLinks.style.right = "-700px";
-      }
-    </script>
 
     <footer>&copy; 2023 Benjamin Marvellous.</footer>
   </body>
