@@ -367,3 +367,37 @@ nav ul li a:hover {
     margin-bottom: 1rem;
   }
 }
+
+/* Add this in your CSS file or in a <style> tag in the HTML file */
+.social-links {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 10px;
+}
+
+.social-links li {
+  font-size: 30px;
+}
+
+/* styling footer */
+.social-links {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 10px;
+}
+
+.social-links li {
+  font-size: 30px;
+}
+
+.social-links a {
+  color: var(--clr-light);
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.social-links a:hover {
+  color: #0077B5;
+}
