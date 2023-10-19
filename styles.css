@@ -206,14 +206,14 @@ nav ul li a {
 
 #contact {
   background-color: #f7f7f7;
-  padding-block: 5rem;
+  padding-block: 2rem;
   text-align: center;
 }
 
 .contact-form {
   margin: 3rem auto;
   max-width: 450px;
-  width: 100%;
+  width: 80%;
   padding: 2rem;
   border: 0.1rem solid var(--clr-primary);
   border-radius: 2rem;
@@ -340,7 +340,6 @@ nav ul li a:hover {
 
   .about-content {
     display: block;
-    /* Stack elements vertically for small screens */
   }
 
   img {
@@ -366,30 +365,28 @@ nav ul li a:hover {
     font-size: 30px;
     margin-bottom: 1rem;
   }
-}
 
-/* Add this in your CSS file or in a <style> tag in the HTML file */
-.social-links {
-  list-style: none;
-  padding: 0;
-  display: flex;
-  gap: 10px;
-}
-
-.social-links li {
-  font-size: 30px;
+  footer{
+    flex-direction: column;
+    font-size: 20px;
+  }
 }
 
 /* styling footer */
+footer{
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+  font-size: 40px;
+}
+
 .social-links {
   list-style: none;
   padding: 0;
   display: flex;
   gap: 10px;
-}
-
-.social-links li {
-  font-size: 30px;
+  justify-content: center;
+  align-items: center;
 }
 
 .social-links a {
