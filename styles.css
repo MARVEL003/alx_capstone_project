@@ -324,30 +324,19 @@ nav ul li a:hover {
                     }
         
                     /* Add any other mobile-specific styles here */
-                }
-        
-                /* Mobile-specific header styles */
-                @media screen and (max-width: 480px) {
                     header {
                         padding: 5px;
                         /* Decrease padding for mobile screens */
                     }
         
                     /* Add any other mobile-specific header styles here */
-                }
-        
-                /* Mobile-specific image sizes */
-                @media screen and (max-width: 480px) {
                     img {
                         max-width: 100%;
                         /* Images span the full width of the screen */
                     }
         
                     /* Add any other mobile-specific image size styles here */
-                }
-        
-                /* Mobile-specific layout for "About Me" section */
-                @media screen and (max-width: 480px) {
+                
                     .about-content {
                         display: block;
                         /* Stack elements vertically for small screens */
