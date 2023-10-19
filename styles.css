@@ -278,3 +278,66 @@ nav ul li a:hover {
     text-decoration: underline;
     color: dodgerblue;
 }
+
+/* Mobile-first design */
+body {
+    font-size: 16px;
+    /* Base font size */
+}
+
+ /* header {
+    /* Your existing styles for header */ 
+
+/* Responsive styles for tablets */
+@media screen and (min-width: 768px) {
+    body {
+        font-size: 18px;
+        /* Increase font size for tablets */
+    }
+
+        header {
+            padding: 20px;
+        }
+
+    /* Add any other tablet-specific styles here */
+}
+
+/* Responsive styles for desktops */
+@media screen and (min-width: 1024px) {
+    body {
+        font-size: 30px;
+    }
+
+        header {
+            padding: 30px;
+        }
+
+    /* Add any other desktop-specific styles here */
+}
+
+/* For landscape-oriented devices (e.g., tablets in landscape mode) */
+@media screen and (min-width: 1024px) and (orientation: landscape) {
+    /* Add landscape-specific styles here */
+}
+
+/* Custom media queries for specific screen sizes */
+@media screen and (max-width: 480px) {
+
+    /* Styles for screens up to 480px wide (e.g., mobile phones) */
+    header {
+            padding: 30px;
+        }
+
+    /* Add any other mobile-specific styles here */
+}
+
+/* Custom media queries for larger screens */
+@media screen and (min-width: 1440px) {
+
+    /* Styles for screens wider than 1440px (e.g., large desktops) */
+    header {
+            padding: 30px;
+        }
+
+    /* Add any other large-screen-specific styles here */
+}
