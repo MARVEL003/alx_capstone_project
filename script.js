@@ -21,3 +21,32 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
     });
   });
 });
+
+document.getElementById("contact-form").addEventListener("submit", function (event) {
+    event.preventDefault();
+
+    // Collect form data
+    const formData = new FormData(this);
+
+    // Send form data to the server using Fetch API
+    fetch("server.php", {
+        method: "POST",
+        body: formData,
+    })
+    .then(response => {
+        if (response.ok) {
+            return response.text();
+        } else {
+            throw new Error("Network response was not ok.");
+        }
+    })
+    .then(data => {
+        // Handle the response from the server (e.g., show a success message)
+        console.log(data);
+    })
+    .catch(error => {
+        // Handle errors (e.g., show an error message)
+        console.error("Error:", error);
+    });
+});
+
