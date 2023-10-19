@@ -70,7 +70,7 @@ nav ul li a {
   font-size: 0.9rem;
 }
 
-nav .hamburger {
+.hamburger {
   display: none;
 }
 
@@ -298,7 +298,7 @@ nav ul li a:hover {
     z-index: 99;
   }
 
-  nav .hamburger {
+.hamburger {
     display: flex;
     cursor: pointer;
     font-size: 25px;
