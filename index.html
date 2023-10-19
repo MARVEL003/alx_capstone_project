@@ -3,11 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Marvie's - Portfolio</title>
+    <title>Marvie's Portfolio</title>
+
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css"
-      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
     />
     <link rel="stylesheet" type="text/css" href="styles.css" />
   </head>
@@ -16,7 +16,7 @@
       <div class="container">
         <a href="./"><h4 class="logo">Marvie</h4></a>
         <nav id="navLinks" class="Navstyle">
-          <i class="fas fas-times hamburger" onclick="hideMenu()"></i>
+          <i class="fas fa-times hamburger" onclick="hideMenu"></i>
           <ul>
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About Me</a></li>
@@ -24,7 +24,7 @@
             <li><a href="#projects">Projects</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
-          <i class="fas fas-bars hamburger" onclick="showMenu()"></i>
+          <i class="fas fa-bars hamburger" onclick="showMenu"></i>
         </nav>
       </div>
     </header>
@@ -80,7 +80,7 @@
           <img src="./images/css.png" alt="CSS image" />
           <img src="./images/JS.png" alt="JS image" />
           <img src="./images/py.png" alt="PY image" />
-          <img src="./images/sql.png" alt="sql image" />
+          <img src="./images/sql.png" alt="sql image" class="last-image" />
         </div>
       </div>
     </section>
@@ -140,6 +140,7 @@
       </div>
     </section>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"></script>
     <script src="script.js"></script>
     <script>
       var navLinks = document.getElementById("navLinks");
