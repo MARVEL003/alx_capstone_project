@@ -281,8 +281,7 @@ nav ul li a:hover {
 
 /* Mobile-first design */
 body {
-    font-size: 16px;
-    /* Base font size */
+    font-size: 18px;
 }
 
  /* header {
@@ -291,8 +290,7 @@ body {
 /* Responsive styles for tablets */
 @media screen and (min-width: 768px) {
     body {
-        font-size: 18px;
-        /* Increase font size for tablets */
+        font-size: 25px;
     }
 
         header {
@@ -305,7 +303,7 @@ body {
 /* Responsive styles for desktops */
 @media screen and (min-width: 1024px) {
     body {
-        font-size: 30px;
+        font-size: 25px;
     }
 
         header {
