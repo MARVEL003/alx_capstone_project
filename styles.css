@@ -312,7 +312,7 @@ nav ul li a:hover {
 
     /* Styles for screens up to 480px wide (e.g., mobile phones) */
                 /* Base style for smaller screens (mobile-first) */
-                @media screen and (max-width: 480px) {
+                @media screen and (max-width: 360px) {
                     .container {
                         max-width: 100%;
                         padding-inline: 1rem;
