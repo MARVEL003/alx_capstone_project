@@ -279,14 +279,6 @@ nav ul li a:hover {
     color: dodgerblue;
 }
 
-/* Mobile-first design */
-body {
-    font-size: 18px;
-}
-
- /* header {
-    /* Your existing styles for header */ 
-
 /* Responsive styles for tablets */
 @media screen and (min-width: 768px) {
     body {
@@ -318,15 +310,7 @@ body {
     /* Add landscape-specific styles here */
 }
 
-/* Custom media queries for specific screen sizes */
-@media screen and (max-width: 480px) {
-
     /* Styles for screens up to 480px wide (e.g., mobile phones) */
-    header {
-            padding: 30px;
-        }
-
-        /* Mobile-specific font size and line height */
         @media screen and (max-width: 480px) {
             body {
                 font-size: 14px;
