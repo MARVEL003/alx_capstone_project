@@ -21,6 +21,8 @@ Technologies I Used.
 1) HTML5
 2) CSS3
 3) JavaScript (for smooth scrolling)
+4) PHP
+
 
 License.
 This project is licensed under the MIT License - see the LICENSE.md file for details.
