@@ -10,7 +10,9 @@
   box-sizing: border-box;
 }
 
-a , a:hover ,a:focus{
+a,
+a:hover,
+a:focus {
   color: inherit;
   text-decoration: none;
 }
@@ -178,8 +180,8 @@ nav ul li a {
 
 /* Style the "Skills" section */
 #skills {
-  background-color: #f7f7f7d4;
-  padding: 40px;
+  background-color: #ddd;
+  padding: 20px;
 }
 
 .skills-grid {
@@ -187,23 +189,75 @@ nav ul li a {
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
+  margin-top: 20px;
 }
 
 .skills-grid img {
-  height: 100px;
+  height: 120px;
 }
 
 /* Style the "Projects" section */
+.heading {
+  font-size: 60px;
+  text-align: center;
+}
+
 #projects {
-  background-color: #fff;
-  padding: 40px;
+  display: flex;
+  justify-content: space-between;
+  
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.project {
+  width: 48%;
+  height: 100%;
+  border: 1px solid #ccc;
+  background-color: #ffffffe4;
+  padding: 20px;
+  margin: 10px;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+  display: flex;
+    flex-direction: column;
+}
+
+.project img {
+  max-width: 100%;
+  border: 1px solid #ddd;
+  flex-grow: 1;
+}
+
+.project:hover {
+  transform: scale(1.05);
+}
+
+.project p {
+  font-size: 1rem;
+  color: #555;
+}
+
+.project h2 {
+  margin: 10px 0;
+}
+
+.project a {
+  display: block;
+  text-decoration: none;
+  color: #007bff;
+  margin-top: 10px;
+  font-weight: bold;
+  transition: color 0.2s;
+}
+
+.project a:hover {
+  color: #0056b3;
 }
 
 /* Style the "Contact" section */
-.heading {
-  font-size: 60px;
-}
-
 #contact {
   background-color: #f7f7f7;
   padding-block: 2rem;
@@ -215,7 +269,7 @@ nav ul li a {
   max-width: 450px;
   width: 80%;
   padding: 2rem;
-  border: 0.1rem solid var(--clr-primary);
+  border: 0.3rem solid var(--clr-primary);
   border-radius: 2rem;
 }
 
@@ -298,7 +352,7 @@ nav ul li a:hover {
     z-index: 99;
   }
 
-.hamburger {
+  .hamburger {
     display: flex;
     cursor: pointer;
     font-size: 25px;
@@ -326,7 +380,7 @@ nav ul li a:hover {
     align-items: center;
   }
 
-  nav ul{
+  nav ul {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -356,24 +410,32 @@ nav ul li a:hover {
     gap: 2rem;
   }
 
-  .last-image{
+  .last-image {
     grid-column: span 2;
   }
 
-  .heading{
+  .heading {
     text-align: center;
     font-size: 30px;
     margin-bottom: 1rem;
   }
 
-  footer{
+  #projects {
     flex-direction: column;
-    font-size: 15px;
+  }
+
+  .project {
+    width: 90%;
+  }
+
+  footer {
+    flex-direction: column;
+    font-size: 10px;
   }
 }
 
 /* styling footer */
-footer{
+footer {
   justify-content: space-between;
   display: flex;
   align-items: center;
@@ -396,5 +458,5 @@ footer{
 }
 
 .social-links a:hover {
-  color: #0077B5;
+  color: #0077b5;
 }
