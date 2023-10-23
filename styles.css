@@ -420,13 +420,60 @@ nav ul li a:hover {
     margin-bottom: 1rem;
   }
 
-  #projects {
-    flex-direction: column;
-  }
-
-  .project {
-    width: 90%;
-  }
+    #projects {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+  
+    .project {
+      width: 90%;
+      height: 100%;
+      border: 1px solid #ccc;
+      background-color: #ffffffe4;
+      padding: 20px;
+      margin: 10px;
+      text-align: center;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      transition: transform 0.2s;
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .project img {
+      max-width: 100%;
+      border: 1px solid #ddd;
+      flex-grow: 1;
+    }
+  
+    .project:hover {
+      transform: scale(1.05);
+    }
+  
+    .project p {
+      font-size: 1rem;
+      color: #555;
+    }
+  
+    .project h2 {
+      margin: 10px 0;
+    }
+  
+    .project a {
+      display: block;
+      text-decoration: none;
+      color: #007bff;
+      margin-top: 10px;
+      font-weight: bold;
+      transition: color 0.2s;
+    }
+  
+    .project a:hover {
+      color: #0056b3;
+    }
 
   footer {
     flex-direction: column;
