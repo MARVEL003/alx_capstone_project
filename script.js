@@ -41,12 +41,21 @@ document.getElementById("contact-form").addEventListener("submit", function (eve
         }
     })
     .then(data => {
-        // Handle the response from the server (e.g., show a success message)
-        console.log(data);
+        // Handle the response from the server
+        console.log(data); // Log the response from the server
+        if (data === "Email sent successfully!") {
+            // Display a success message to the user
+            const successMessage = document.createElement("div");
+            successMessage.textContent = "Email sent successfully!";
+            successMessage.style.color = "green";
+            this.parentNode.appendChild(successMessage);
+
+            // Clear the form
+            this.reset();
+        }
     })
     .catch(error => {
         // Handle errors (e.g., show an error message)
         console.error("Error:", error);
     });
 });
-

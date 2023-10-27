@@ -8,7 +8,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Use a mail function or library to send the email
     $to = "chimchetarammarvel@gmail.com";
     $headers = "From: $email";
-    mail($to, $subject, $message, $headers);
-    echo "Email sent successfully!";
+
+    if (mail($to, $subject, $message, $headers)) {
+        echo "Email sent successfully!";
+    } else {
+        echo "Email sending failed.";
+    }
 }
 ?>
