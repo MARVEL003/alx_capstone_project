@@ -205,7 +205,6 @@ nav ul li a {
 #projects {
   display: flex;
   justify-content: space-between;
-
   max-width: 1200px;
   margin: 0 auto;
   padding: 20px;
@@ -257,7 +256,7 @@ nav ul li a {
   color: #0056b3;
 }
 
-/* Style the "Contact" section */
+/* Style the contact section */
 #contact {
   background-color: #f7f7f7;
   padding-block: 2rem;
